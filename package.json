@@ -1,0 +1,17 @@
+{
+  "name": "generator-generate",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Barney Loosemore",
+  "license": "MIT",
+  "devDependencies": {
+    "yeoman-generator": "^5.6.1",
+    "yo": "^4.3.0"
+  }
+}
