@@ -1,0 +1,19 @@
+import { createContext, ReactNode, useContext, useState } from 'react';
+
+type Context = {};
+
+const initialContext = {};
+
+export const <%= hookName %>Context = createContext<Context>(initialContext);
+
+export const <%= hookName %>Provider = ({ children }: { children: ReactNode }) => {
+  const [value, setValue] = useState<Context>(initialContext);
+
+  return (
+    <<%= hookName %>Context.Provider value={{ value, setValue }}>
+      {children}
+    </<%= hookName %>Context.Provider>
+  );
+};
+
+export const use<%= hookName %> = () => useContext(<%= hookName %>Context);
